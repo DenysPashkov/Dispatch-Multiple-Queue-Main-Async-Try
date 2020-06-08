@@ -7,3 +7,16 @@
 //
 
 import Foundation
+//MARK: The structure that have to be read
+struct Json4Swift_Base : Codable {
+    let records : [Records]
+}
+
+struct Records : Codable {
+    let id : String
+    let fields : Fields
+}
+
+struct Fields : Codable {
+    let Name : String?
+}
